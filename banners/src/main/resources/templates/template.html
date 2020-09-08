@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<head>
+    <title>Главная страница</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+
+    <style>
+        .user-info{
+            padding: 8px;
+            border: 1px #ccc solid;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="app"> </div>
+
+
+
+    <script type="text/babel">
+
+
+
+       /* ReactDOM.render(
+            <h1>Hello World</h1>, //элемент, который мы хотим создать
+            document.getElementById("app") //где мы хотим создать элемент
+        )*/
+
+       /*var user = {
+           id: 5,
+           age: 33,
+           firstName: 'Vlad',
+           lastName: "Mironenko",
+           getFullName: function () {
+               return `${this.firstName}  ${this.lastName}`;
+           }
+       };
+
+       ReactDOM.render(
+           <div id={user.id}>
+               <p>Полное имя: {user.getFullName()}</p>
+               <p>Возраст: {user.age}</p>
+               <p>Время генерации данных {new Date().toLocaleTimeString()}</p>
+           </div>,
+           document.getElementById("app")
+       )*/
+       /*const user = {
+           id : 5,
+           age: 33,
+           firstName: 'Tom',
+           lastName: 'Smit',
+           getFullName: function(){
+               return `${this.firstName} ${this.lastName}`;
+           }
+       };
+       const userClassName = "user-info";
+       const styleObj = {
+           color:'red',
+           fontFamily:'Verdana'
+       };
+       ReactDOM.render(
+           <div className={userClassName}  style={styleObj}>
+               <p>Полное имя: {user.getFullName()}</p>
+               <p>Возраст: {user.age}</p>
+           </div>,
+           document.getElementById("app")
+       )*/
+
+
+
+    </script>
+<!--<div th:each="eachBan : ${banners}">
+    <h3 th:text="${eachBan.name}"></h3>
+    <h3 th:text="${eachBan.content}"></h3>
+    <h3 th:text="${eachBan.price}"></h3>
+    <h3 th:text="${eachBan.deleted}"></h3>
+</div>-->
+</body>
+</html>

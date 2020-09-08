@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Title</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+</head>
+<body>
+
+<h1>Добавление баннера</h1>
+<form action="/banner/add" method="post">
+    <input type="text" name="name" placeholder="Введите название баннера">
+    <input type="text" name="price" placeholder="Введите цену баннера">
+    <select name="id_category">
+        <option disabled selected>Выберите категорию</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+    <textarea type="text=" name="content" placeholder="Введите содержимое" style="resize: none"></textarea>
+    <button>УДАЛИТЬ БАННЕР</button>
+    <input type="submit" value="Submit">
+
+</form>
+<script type="text/babel"></script>
+
+</body>
+</html>

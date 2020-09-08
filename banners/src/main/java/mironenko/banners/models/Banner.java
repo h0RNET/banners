@@ -6,20 +6,21 @@ import javax.persistence.*;
 public class Banner {
 
     @Id //первичный ключ
-    @GeneratedValue(strategy = GenerationType.AUTO) //уникальное значение
-    private Integer id_banner;
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //уникальное значение 
+
+    private Integer idBanner;
 
     private String name, content;
-    private int category_id;
+    private int categoryId;
     private double price;
     private boolean deleted;
 
     public int getId_banner() {
-        return id_banner;
+        return idBanner;
     }
 
     public void setId_banner(int id_banner) {
-        this.id_banner = id_banner;
+        this.idBanner = id_banner;
     }
 
     public String getName() {
@@ -39,11 +40,11 @@ public class Banner {
     }
 
     public int getCategory_id() {
-        return category_id;
+        return categoryId;
     }
 
     public void setCategory_id(int category_id) {
-        this.category_id = category_id;
+        this.categoryId = category_id;
     }
 
     public double getPrice() {
@@ -62,6 +63,13 @@ public class Banner {
         this.deleted = deleted;
     }
 
+    public Banner() {
+    }
 
-
+    public Banner(String name, String content, int categoryId, double price) {
+        this.name = name;
+        this.content = content;
+        this.categoryId = categoryId;
+        this.price = price;
+    }
 }
